@@ -1,9 +1,11 @@
 package weatherApp;
 
 public class Main {
+
 		public static void main(String[] args) 
 	    {
-	    	ApiCall api = null;
+			
+	    	ApiCall api = null;	    	
 			try {
 				api = new ApiCall();
 			} catch (Exception e) {
@@ -17,4 +19,6 @@ public class Main {
 			}
 
 	    }
+		
+	
 }

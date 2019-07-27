@@ -19,11 +19,12 @@ public class ApiCall {
 	public ApiCall() throws Exception 
 	{
 		//sendGet();
+		currentCityName = name;
 	}
 	
 	public void sendGet() throws Exception {
 		
-	    String apiUrl = url + name + "&units=metric" + "&appid=" + key;
+	    String apiUrl = url + currentCityName + "&units=metric" + "&appid=" + key;
 
 		URL obj = new URL(apiUrl);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
